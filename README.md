@@ -34,7 +34,7 @@
 ## Quickstart
 
 Have a look at `./install.sh`
-This will install all the dependacys on an Arch based machine.
+- This will install all the dependacys on an Arch based machine.
 
 ## License
 
