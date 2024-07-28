@@ -1,0 +1,11 @@
+#!/bin/sh
+
+start=$(date +%s)
+
+read -p "Press [Enter] to stop the stopwatch..."
+
+end=$(date +%s)
+
+elapsed=$((end - start))
+
+echo "Elapsed time: $elapsed seconds"

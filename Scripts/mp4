@@ -1,0 +1,6 @@
+#!/bin/sh
+
+yt-dlp \
+    --embed-thumbnail \
+    --format mp4 \
+    "$@"

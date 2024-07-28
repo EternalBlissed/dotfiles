@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# If the on-screen webcam is already running, exit
+[ "$(pgrep -f 'mpv /dev/video2')" ] && exit
+
+# Start the on-screen webcam
+mpv /dev/video2 \
+--demuxer-lavf-format=video4linux2 \
+--demuxer-lavf-o=input_format=mjpeg \
+--profile=low-latency \
+--untimed \
+--autofit=480x270 \
+--no-osc \
+--no-input-default-bindings \
+--no-terminal
