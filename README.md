@@ -33,8 +33,10 @@
 
 ## Quickstart
 
+I use GNU Stow to manage my dotfiles
+
 Have a look at `./install.sh`
-- This will install all the dependacys on an Arch based machine.
+- This will install all the dependacys and deploy the dotfiles using Stow.
 
 ## License
 
