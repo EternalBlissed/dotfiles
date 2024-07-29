@@ -16,10 +16,7 @@ export LANG="en_US.UTF-8"
 export EDITOR="nvim"
 
 # PATH modifications
-export PATH="$HOME/.npm-global/bin:$HOME/.local/bin:$HOME/.bun/bin:$HOME/.cargo/bin:$HOME/go/bin:/usr/local/bin:$PATH"
-
-# Additional PATH for user scripts
-export PATH=$PATH:$(find $HOME/Scripts -maxdepth 1 -type d | paste -sd ":" -)
+export PATH="$HOME/.npm-global/bin:$HOME/.local/bin:$HOME/.bun/bin:$HOME/.cargo/bin:$HOME/go/bin:/usr/local/bin:$PATH:$(find $HOME/Scripts -maxdepth 1 -type d | paste -sd ":" -)"
 
 # Environment variables for specific applications
 export CMUS_HOME=~/.config/cmus
