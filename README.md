@@ -21,23 +21,23 @@
 │   ├── waybar
 │   └── yazi
 ├── .gtkrc-2.0 # Gtk Themes
-├── install.sh # Install all dependacys on Arch Linux.
+├── install.sh # Deployment Script
 ├── LICENSE # The license
 ├── README.md
 ├── Scripts # My personal bash/sh scripts.
 │   ├── shell-color-scripts
 ├── .tmux.conf # Tmux configuraiton
 ├── TODO # To-Do List
-└── .zshrc # Zshell Configuration
+└── .zshrc # Shell Configuration
 ```
 
 ## Quickstart
 
-I use GNU Stow to manage my dotfiles
+I use GNU Stow to manage my dotfiles.
 
-Have a look at `./install.sh`
-- This will install all the dependacys and deploy the dotfiles using Stow.
+**Installation:**
+   - Run `./install.sh` to install all dependencies and deploy the dotfiles using Stow.
 
 ## License
 
-Unlicense
+This project is licensed under the [Unlicense](https://unlicense.org)
