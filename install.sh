@@ -83,8 +83,8 @@ sudo pacman -S --noconfirm "${PACKAGES[@]}"
 AUR_PACKAGES=(
 
   # System Utilities
-  hyprpicker #
-  swaylock-effects #
+  hyprpicker 
+  swaylock-effects
   wdisplays
 
   # Media and Audio
