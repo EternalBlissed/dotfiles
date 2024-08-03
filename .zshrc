@@ -16,7 +16,7 @@ export LANG="en_US.UTF-8"
 export EDITOR="nvim"
 
 # PATH modifications
-export PATH="$HOME/.npm-global/bin:$HOME/.local/bin:$HOME/.bun/bin:$HOME/.cargo/bin:$HOME/go/bin:/usr/local/bin:$PATH:$(find $HOME/Scripts -maxdepth 1 -type d | paste -sd ":" -)"
+export PATH="$HOME/.npm-global/bin:$HOME/.local/bin:$HOME/.bun/bin:$HOME/.cargo/bin:$HOME/go/bin:/usr/local/bin:$HOME/Scripts:$PATH"
 
 # Environment variables for specific applications
 export CMUS_HOME=~/.config/cmus
@@ -50,9 +50,9 @@ alias code="codium"
 alias internet-speed='speedtest-cli --simple --secure'
 
 # Wayland setup
-#if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-#  exec sway
-#fi 
+if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+  exec sway
+fi 
 
 # Starship prompt
 eval "$(starship init zsh)"
