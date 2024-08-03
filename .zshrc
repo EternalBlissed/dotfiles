@@ -50,9 +50,9 @@ alias code="codium"
 alias internet-speed='speedtest-cli --simple --secure'
 
 # Wayland setup
-if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-  exec sway
-fi 
+#if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+#  exec sway
+#fi 
 
 # Starship prompt
 eval "$(starship init zsh)"
