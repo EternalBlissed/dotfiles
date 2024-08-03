@@ -125,8 +125,9 @@ sudo pacman -Rns --noconfirm $(pacman -Qtdq)
 
 sudo chsh $USER -s /usr/bin/zsh
 
-stow .
-
 echo "Done! Please make sure the GTK theme has been applied in nwg-look"
 echo "Also install tmux plugins by pressing prefix + I in tmux"
 
+rm -rf install.sh LICENSE pkg PKGBUILD README.md src TODO *.gz yay-bin *.xzt *.zst .SRCINFO
+
+stow .
