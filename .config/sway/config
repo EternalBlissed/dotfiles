@@ -83,8 +83,8 @@ exec swayidle -w \
     # Reload the configuration file
     bindsym $mod+Shift+r reload
 
-    # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+q exec pkill sway
+    # Power Options
+    bindsym $mod+Shift+q exec ~/.config/sway/scripts/power-options.sh
 
     bindsym XF86AudioRaiseVolume exec pamixer -i 5
     bindsym XF86AudioLowerVolume exec pamixer -d 5 
