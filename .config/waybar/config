@@ -21,7 +21,8 @@
     "custom/arrow-dark-on-light-left",
     "backlight",
     "custom/arrow-light-on-dark-left",
-    "battery",
+    "battery#bat1",
+    "battery#bat2",
     "custom/arrow-dark-on-light-left",
     "sway/language",
     "custom/arrow-light-on-dark-left",
@@ -140,17 +141,49 @@
     "format-icons": ["󰃞 ", "󰃟 ", "󰃠 "]
   },
 
-  "battery": {
-    "tooltip": true,
-    "tooltip-format": "{time}",
-    "states": {
-      "warning": 35,
-      "critical": 20
+  "battery#bat1": {
+      "bat": "BAT0",
+      "adapter": "AC",
+      "interval": 10,
+      "full-at": 99,
+      "states": {
+        "full": 100,
+        "good": 99,
+        "empty": 5
+      },
+      "format": "{icon} {capacity}%",
+      "format-charging": " {capacity}%",
+      "format-plugged": " {capacity}%",
+      "format-empty": "",
+      "format-full": "",
+      "format-icons": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     },
-    "format": "{capacity}% {icon}",
-    "format-charging": "{capacity}%  ",
-    "format-plugged": "{capacity}% ",
-    "format-icons": [" ", " ", " ", " ", " "]
+  "battery#bat2": {
+      "bat": "BAT1",
+      "adapter": "AC",
+      "interval": 10,
+      "states": {
+        "full": 100,
+        "good": 99,
+        "critical": 15
+      },
+      "format": "{icon} {capacity}%",
+      "format-charging": " {capacity}%",
+      "format-plugged": " {capacity}%",
+      "format-full": "",
+      "format-icons": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
   },
 
   "sway/language": {
