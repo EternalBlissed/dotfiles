@@ -26,7 +26,7 @@ exec /usr/lib/xdg-desktop-portal-wlr
 exec /usr/lib/xdg-desktop-portal 
 
 ### Wallpaper
-exec swaybg -i ~/.config/sway/bgs/1.jpg -m fill
+include ~/.config/sway/user-config/current-bg.conf
 
 ### Monitor
 output DP-1 pos 0 0
@@ -72,6 +72,9 @@ exec swayidle -w \
 
     # Pick a color
     bindsym $mod+Shift+c exec ~/.config/sway/scripts/hyprpicker.sh
+
+    # Set a wallpaper
+    bindsym $mod+Shift+w exec ~/.config/sway/scripts/set-wallpaper
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.

@@ -1,0 +1,51 @@
+#!/bin/bash
+
+dir="/home/$USER/.config/sway/bgs/" # wallpapers folder
+cd "$dir" || exit
+
+wallpaper="none is selected"
+set_command="swaybg -m fill -i"
+view_command="imv"
+startup_config_file="/home/$USER/.config/sway/user-config/current-bg.conf" # Configuration file for startup wallpaper
+
+selectpic() {
+    wallpaper=$(ls "$dir" | rofi -dmenu -p "Select a wallpaper: ($wallpaper)")
+
+    if [[ $wallpaper == "q" || $wallpaper == "" ]]; then
+        exit
+    else
+        action
+    fi
+}
+
+action() {
+    whattodo=$(echo -e "View\nSet\nSet (Permanent)\nExit" | rofi -dmenu -p "What do you want to do with it? ($wallpaper)")
+    if [[ $whattodo == "Set" ]]; then
+        set_wall
+    elif [[ $whattodo == "Set (Permanent)" ]]; then
+        set_permanent
+    elif [[ $whattodo == "View" ]]; then 
+        view_wall
+    elif [[ $whattodo == "Exit" ]]; then
+      exit
+    else 
+       exit
+    fi
+}
+
+set_wall() {
+    pkill swaybg && $set_command "$dir$wallpaper" & 
+}
+
+view_wall() {
+    $view_command "$dir$wallpaper" &
+}
+
+set_permanent() {
+    set_wall
+    sed -i '/^exec swaybg/d' "$startup_config_file"
+    echo "exec swaybg -i $dir$wallpaper -m fill" >> "$startup_config_file"
+}
+
+selectpic
+
