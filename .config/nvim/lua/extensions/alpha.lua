@@ -10,7 +10,8 @@ local alpha = require('alpha')
 
 local if_nil = vim.F.if_nil
 
-local num_plugins_loaded = #vim.fn.globpath(vim.fn.stdpath("data") .. "/lazy", '*', 0, 1)
+local num_plugins_loaded =
+	#vim.fn.globpath(vim.fn.stdpath('data') .. '/lazy', '*', 0, 1)
 
 local default_header = {
 	type = 'text',
@@ -107,12 +108,12 @@ local buttons = {
 }
 
 local footer = {
-  type = 'text',
-  val = {
-  	"",
-  	' ' .. num_plugins_loaded .. ' plugins loaded'
-  },
-  opts = {
+	type = 'text',
+	val = {
+		'',
+		' ' .. num_plugins_loaded .. ' plugins loaded',
+	},
+	opts = {
 		position = 'center',
 		hl = 'Number',
 	},

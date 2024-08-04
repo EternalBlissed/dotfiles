@@ -9,7 +9,7 @@ local bufferline = require('bufferline')
 bufferline.setup({
 	highlights = {
 		fill = {
-			bg = "NONE"
+			bg = 'NONE',
 		},
 	},
 })

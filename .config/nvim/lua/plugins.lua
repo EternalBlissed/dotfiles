@@ -247,11 +247,11 @@ return {
 
 	-- Discord Presence {{{
 	{
-	  'IogaMaster/neocord',
-	  event = "VeryLazy",
-	  config = function()
-	  	require('extensions.neocord')
-	  end
+		'IogaMaster/neocord',
+		event = 'VeryLazy',
+		config = function()
+			require('extensions.neocord')
+		end,
 	},
 	-- }}}
 
