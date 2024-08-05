@@ -20,7 +20,6 @@ set $menu rofi -show drun
 exec waybar
 exec swaync
 exec wl-paste --watch cliphist store
-exec mpv ~/.config/sway/startup.wav
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec /usr/lib/xdg-desktop-portal-wlr 
 exec /usr/lib/xdg-desktop-portal 

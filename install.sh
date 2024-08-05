@@ -20,6 +20,7 @@ PACKAGES=(
   zsh
   zsh-autosuggestions
   zsh-syntax-highlighting
+  z
 
   # System Utilities
   blueman
@@ -81,11 +82,14 @@ PACKAGES=(
 sudo pacman -S --noconfirm "${PACKAGES[@]}"
 
 AUR_PACKAGES=(
+  # Terminal and Shell Enhancements
+  fzf-tab-git
 
   # System Utilities
   hyprpicker 
   swaylock-effects
   wdisplays
+  sysz
 
   # Media and Audio
   cmus-git
