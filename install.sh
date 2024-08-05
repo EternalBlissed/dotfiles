@@ -64,6 +64,7 @@ PACKAGES=(
   eza
   imv
   stow
+  yt-dlp
 
   # Neovim Dependancys BLOAT!!!
   neovim
