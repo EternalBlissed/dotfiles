@@ -13,7 +13,7 @@ PACKAGES=(
   starship
   tmux
   fzf
-  tldr
+  tealdeer
   speedtest-cli
   ripgrep
   wget
