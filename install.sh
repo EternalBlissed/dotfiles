@@ -126,6 +126,8 @@ mkdir ~/.npm-global
 npm config set prefix '~/.npm-global'
 npm i -g bash-language-server neovim
 
+tldr --update
+
 sudo pacman -Rns --noconfirm $(pacman -Qtdq)
 
 sudo chsh $USER -s /usr/bin/zsh
