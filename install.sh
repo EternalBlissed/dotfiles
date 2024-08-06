@@ -94,7 +94,6 @@ AUR_PACKAGES=(
 
   # Media and Audio
   cmus-git
-  librewolf-bin
 
   # Appearance and Theming
   gruvbox-dark-gtk

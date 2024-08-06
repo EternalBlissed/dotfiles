@@ -1,0 +1,11 @@
+#!/bin/sh
+echo -e " /\_/\  \e[34mKe\e[0m: $(uname -r | sed 's/-arch1-1//g')"
+echo -e "( o.o ) \e[34mUp\e[0m: $( uptime -p | sed 's/up //g' | sed 's/ hour/h/g' | sed 's/ minutes/m/g' | sed 's/,//g'| sed 's/ hours/h/g')"
+echo -e " > ^ <  \e[34mPk\e[0m: $(array=($(pacman -Qq)) && echo "${#array[@]}")"
+
+#Ke: $(uname -r | sed 's/-arch1-1//g')"
+ 
+#Up: $( uptime -p | sed 's/up //g' | sed 's/ hours/h/g' | sed 's/ minutes/m/g' | sed 's/,//g')"
+ 
+#Pk: $(array=($(pacman -Qq)) && echo "${#array[@]}")"
+

@@ -1,0 +1,26 @@
+#!/bin/sh
+
+# Print kernel version
+echo -e " /\_/\  \e[34mKe\e[0m: $(uname -r | sed 's/-arch1-1//g')"
+
+# Print uptime
+echo -e "( o.o ) \e[34mUp\e[0m: $(uptime -p | sed 's/up //g' | sed 's/ hour/h/g' | sed 's/ minutes/m/g' | sed 's/,//g' | sed 's/ hours/h/g')"
+
+# Count installed packages (Arch Linux)
+echo -e " > ^ <  \e[34mPk\e[0m: $(array=($(pacman -Qq)) && echo "${#array[@]}")"
+
+printf '\n'
+
+# Color codes display
+for i in {0..7}; do
+    printf '\e[4%dm  \e[0m' "$i"
+done
+
+printf '\n'
+
+for i in {0..7}; do
+    printf '\e[10%dm  \e[0m' "$i"
+done
+
+printf '\n'
+
