@@ -75,6 +75,9 @@ exec swayidle -w \
     # Set a wallpaper
     bindsym $mod+Shift+w exec ~/.config/sway/scripts/set-wallpaper
 
+    # Open Power Options
+    bindsym $mod+Shift+q exec ~/.config/sway/scripts/power-options.sh
+
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.
@@ -84,9 +87,6 @@ exec swayidle -w \
 
     # Reload the configuration file
     bindsym $mod+Shift+r reload
-
-    # Power Options
-    bindsym $mod+Shift+q exec ~/.config/sway/scripts/power-options.sh
 
     bindsym XF86AudioRaiseVolume exec pamixer -i 5
     bindsym XF86AudioLowerVolume exec pamixer -d 5 
