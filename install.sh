@@ -123,7 +123,7 @@ xdg-user-dirs-update
 
 mkdir ~/.npm-global
 npm config set prefix '~/.npm-global'
-npm i -g bash-language-server neovim
+npm i -g neovim
 
 tldr --update
 

@@ -14,6 +14,7 @@ mason_lspconfig.setup({
 		'lua_ls', -- LSP for Lua language
 		'tsserver', -- LSP for Typescript
 		'emmet_ls', -- LSP for Emmet (Vue, HTML, CSS)
+    'html', -- LSP For HTML
 		'cssls', -- LSP for CSS
 		'pyright', -- LSP for Python
 		'volar', -- LSP for Vue

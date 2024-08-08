@@ -27,8 +27,9 @@ exec /usr/lib/xdg-desktop-portal
 ### Wallpaper
 include ~/.config/sway/user-config/current-bg.conf
 
-### Monitor
-output DP-1 pos 0 0
+### Monitors
+# Configure this in wdisplays
+output *
 
 ### Idle configuration
 
