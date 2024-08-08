@@ -220,6 +220,8 @@ gaps inner 5
 gaps outer 0
 smart_gaps off
 
+default_orientation auto
+
 default_border pixel 3
 default_floating_border pixel 3
 smart_borders on
@@ -232,7 +234,7 @@ client.placeholder      #fabd2f	#fabd2f	#1d2021
 client.urgent           #d3869b	#d3869b	#1d2021	
 client.background       #282828
 
-focus_follows_mouse no
+focus_follows_mouse yes
 
 #
 # X Wayland
