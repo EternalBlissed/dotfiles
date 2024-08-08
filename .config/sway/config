@@ -27,9 +27,8 @@ exec /usr/lib/xdg-desktop-portal
 ### Wallpaper
 include ~/.config/sway/user-config/current-bg.conf
 
-### Monitors
-# Configure this in wdisplays
-output *
+### Monitors (configured in ~/.config/kanshi/config)
+exec kanshi
 
 ### Idle configuration
 

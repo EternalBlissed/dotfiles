@@ -30,6 +30,7 @@ PACKAGES=(
   cliphist
   fastfetch
   grim
+  kanshi
   jq
   less
   networkmanager
@@ -89,7 +90,6 @@ AUR_PACKAGES=(
   # System Utilities
   hyprpicker 
   swaylock-effects
-  wdisplays
   sysz
 
   # Media and Audio
